@@ -1,0 +1,43 @@
+# TwelveTetFretboard
+
+> TwelveTetFretboard is a small fretboard utility library for Javascript. It helps you manipulate pitches on a fretboard.
+
+Please, refer to the [Installation](#installation), [Usage](#usage) and [API](#api) sections for more information.
+
+## Installation <a name="installation"></a>
+
+Install the latest stable version of TwelveTetFretboard using [npm](https://www.npmjs.com/):
+
+```bash
+npm install twelvetet-fretboard twelvetet
+```
+
+You can also [access the files on unpkg.com](https://unpkg.com/twelvetet-fretboard/).
+
+You can use TwelveTetFretboard with module bundlers.
+
+The [npm package](https://www.npmjs.com/package/twelvetet-fretboard) includes precompiled production and development [UMD](https://github.com/umdjs/umd) builds in the `dist/` folder. They can be used without a bundler.
+
+The UMD builds make TwelveTetFretboard available as `window.TwelveTetFretboard` global variable.
+
+TwelveTetFretboard works in [any modern browser](http://caniuse.com/#feat=es5) and Node.js.
+
+## Usage <a name="usage"></a>
+
+```Javascript
+import Fretboard from 'twelvetet-fretboard'
+
+const tuning = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'] // standard guitar tuning
+const numFrets = 12
+const fretboard = new Fretboard(tuning, numFrets)
+
+console.log(fretboard.at(0, 0).toString())          // E4
+```
+
+## API  <a name="api"></a>
+
+{{>main}}
+
+## License
+
+This project is [MIT-licensed](LICENSE)
