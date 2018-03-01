@@ -1,7 +1,8 @@
 {
     "name": "twelvetet-fretboard",
-    "version": "0.1.0",
-    "description": "## API  <a name=\"api\"></a>",
+    "version": "0.1.1",
+    "description":
+        "A small fretboard utility library for Javascript. It helps you manipulate pitches on a fretboard.",
     "main": "lib/twelvetet-fretboard.js",
     "module": "es/twelvetet-fretboard.js",
     "files": ["dist", "lib", "es", "src"],
